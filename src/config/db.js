@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 mongoose.set('useFindAndModify', false);
-const db = mongoose.connect('mongodb://root:example@mongo/producto?authSource=admin', {
+const db = mongoose.connect('mongodb://root:example@mongo/Producto?authSource=admin', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,

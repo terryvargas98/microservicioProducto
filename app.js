@@ -13,13 +13,13 @@ app.use(morgan('tiny'));
 app.use(cors());
 
 //routes
-const Routes = require('./src/routes/sales');
-app.use('/api', Routes);
+const Routes = require('./src/routes/producto');
+app.use('/service', Routes);
 
 
 app.get('/', function(request, response) {
     var result = 'App is running'
     response.send(result);
-}).listen(5000, function() {
-    console.log('App is running, server is listening on port 5000');
+}).listen(6000, function() {
+    console.log('App is running, server is listening on port 6000');
 });
